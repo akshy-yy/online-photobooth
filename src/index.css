@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-vintage-bg: #F5F2EB;
+  --color-vintage-brown: #6B4423;
+  --color-vintage-border: #D9C5B2;
+  --color-vintage-black: #1A1A1A;
+  --color-vintage-white: #FFFFFF;
+  --color-vintage-strip1: #FAF8F5;
+  --color-vintage-strip2: #FDEAEB;
+  --color-vintage-strip3: #E3F2F2;
+  --color-vintage-strip4: #F5E6D3;
+
+  --font-cursive: "Great Vibes", cursive;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-vintage-bg text-vintage-brown font-serif antialiased;
+  }
+}
+
+@layer utilities {
+  .vintage-shadow {
+    box-shadow: 0 10px 25px -5px rgba(107, 68, 35, 0.1), 0 8px 10px -6px rgba(107, 68, 35, 0.1);
+  }
+}
